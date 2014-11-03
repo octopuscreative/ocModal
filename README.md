@@ -13,7 +13,7 @@ Nicer description coming soon(ish), probably. You can [download ocModal here](ht
 ```
 
 ``` javascript
-var demoModal = $('demo-modal');
+var demoModal = $('#demo-modal');
 
 new window.oc.Modal(demoModal);
 
