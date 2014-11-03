@@ -1,6 +1,6 @@
 # ocModal
 
-Nicer description coming soon(ish), probably. You can [download ocModal here](https://github.com/octopuscreative/ocModal/releases/latest). jQuery is required, but just about any version should do the trick; it's not using it for anything super fancy.
+Nicer description coming soon(ish), probably. You can [download ocModal here](https://github.com/octopuscreative/ocModal/releases/latest). jQuery is required, but just about any version should do the trick; it's not being used for anything super fancy.
 
 
 ## Example
