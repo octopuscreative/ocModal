@@ -81,4 +81,4 @@ new CustomModal(customModalElement, false, null, null, 'hello world')
 
 ## Meta Stuff
 
-ocModal was created by [Paul Straw](https://github.com/paulstraw) for [Octopus Creative](http://octopuscreative.com). It's MIT-licensed (see the [license file](https://github.com/octopuscreative/ocModal/blob/master/LICENSE) for more info). Any contribution is absolutely welcome, but please review the [contribution guidelines](https://github.com/octopuscreative/ocModal/blob/master/CONTRIBUTING.md) before getting started.
+ocModal was created by [Paul Straw](https://github.com/paulstraw) for [Octopus Creative](http://octopuscreative.com). It's MIT-licensed (see the [license file](https://github.com/octopuscreative/ocModal/blob/master/LICENSE.md) for more info). Any contribution is absolutely welcome, but please review the [contribution guidelines](https://github.com/octopuscreative/ocModal/blob/master/CONTRIBUTING.md) before getting started.
