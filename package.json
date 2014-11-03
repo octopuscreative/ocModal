@@ -1,0 +1,32 @@
+{
+	"author": "Octopus Creative",
+	"name": "ocModal",
+	"version": "1.0.0",
+	"description": "JavaScript modals done right.",
+	"dependencies": {},
+	"devDependencies": {
+		"grunt": "~0.4.5",
+		"grunt-contrib-copy": "^0.7.0",
+		"grunt-contrib-clean": "^0.6.0",
+		"grunt-contrib-sass": "^0.8.1",
+		"grunt-autoprefixer": "^1.0.1",
+		"grunt-contrib-coffee": "^0.12.0",
+		"grunt-contrib-uglify": "^0.6.0",
+		"grunt-contrib-watch": "^0.6.1"
+	},
+	"engine": "node >= 0.10",
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/octopuscreative/ocModal/blob/master/LICENSE"
+		}
+	],
+	"maintainers": [
+		{
+			"name": "Paul Straw",
+			"url": "https://github.com/paulstraw"
+		}
+	],
+	"download": "https://github.com/octopuscreative/ocModal/releases",
+	"bugs": "https://github.com/octopuscreative/ocModal/issues"
+}

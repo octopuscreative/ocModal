@@ -1,0 +1,60 @@
+#modal-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	visibility: visible;
+	transition: visibility 211ms linear, opacity 210ms ease-out;
+	opacity: 1;
+
+	&.hidden {
+		visibility: hidden;
+		opacity: 0;
+		z-index: -1;
+	}
+}
+
+.modal {
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	transform: translateY(0) translateX(-50%);
+	z-index: 10000;
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 241ms linear, opacity 240ms ease-out, transform 240ms ease-out;
+	transform-origin: left center;
+
+	.close {
+		background-color: transparent;
+		text-indent: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		height: 14px;
+		width: 14px;
+		padding: 0;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+
+		&:active {
+			top: 21px;
+		}
+	}
+
+	&.hidden {
+		visibility: hidden;
+		transform: scale(0.95) translateY(-100px) translateX(-50%);
+		opacity: 0;
+		z-index: -1;
+		transform-origin: left center;
+	}
+
+	.spacer {
+		// see http://stackoverflow.com/questions/9350775/set-position-absolute-and-margin
+		height: 60px;
+		margin-bottom: -60px;
+	}
+}
