@@ -1,12 +1,19 @@
+# set up
 initializeModals = ->
   $('body').append('<div id="modal-bg" class="hidden"></div>')
 
   $('#modal-bg').on 'click', ->
+    # hide modals when #modal-bg is clicked, unless they're "really" modal
+    # (aka must be closed programmatically or with a close button)
     $('.modal').trigger('close') unless $('.modal.really:not(.hidden)').length
 
+# the actual modal class
 class Modal
   constructor: (@el, reallyModal = false, @onOpen, @onClose) ->
     initializeModals() unless $('#modal-bg').length
+
+    # make sure @el is a jQuery object
+    @el = $(@el)
 
     @bg = $('#modal-bg')
     @el.addClass('modal hidden')
@@ -39,11 +46,6 @@ class Modal
   closer: =>
     @el.addClass('hidden')
     @bg.addClass('hidden')
-
-    vid = $('#video-player')
-    if vid.is ':visible'
-      src = $('#video-player').attr('src')
-      vid.attr('src', src)
 
     @onClose?()
 
