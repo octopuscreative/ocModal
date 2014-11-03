@@ -1,6 +1,6 @@
 # ocModal
 
-Nicer description coming soon(ish), probably.  jQuery is required, but just about any version should do the trick; it's not using it for anything super fancy.
+Nicer description coming soon(ish), probably. You can [download ocModal here](https://github.com/octopuscreative/ocModal/releases/latest). jQuery is required, but just about any version should do the trick; it's not using it for anything super fancy.
 
 
 ## Example
@@ -81,4 +81,4 @@ new CustomModal(customModalElement, false, null, null, 'hello world')
 
 ## Meta Stuff
 
-ocModal was created by [Paul Straw](https://github.com/paulstraw) for [Octopus Creative](http://octopuscreative.com). It's MIT-licensed (see the [license file](https://github.com/octopuscreative/ocModal/blob/master/LICENSE) for more info). Any contribution is absolutely welcome, please review the [contribution guidelines](https://github.com/octopuscreative/ocModal/blob/master/CONTRIBUTING.md)
+ocModal was created by [Paul Straw](https://github.com/paulstraw) for [Octopus Creative](http://octopuscreative.com). It's MIT-licensed (see the [license file](https://github.com/octopuscreative/ocModal/blob/master/LICENSE) for more info). Any contribution is absolutely welcome, but please review the [contribution guidelines](https://github.com/octopuscreative/ocModal/blob/master/CONTRIBUTING.md) before getting started.
