@@ -15,8 +15,11 @@ class Modal
     # make sure @el is a jQuery object
     @el = $(@el)
 
+    # bail if @el has already been modalified
+    return if @el.hasClass('modalified')
+
     @bg = $('#modal-bg')
-    @el.addClass('modal hidden')
+    @el.addClass('modal hidden modalified')
 
     @el.addClass('really') if reallyModal
 
@@ -25,11 +28,9 @@ class Modal
     @el.on 'open', @opener
     @el.on 'close', @closer
 
-    @close = @el.find '.close'
-    if @close.length
-      @close.on 'click', (e) =>
-        e.preventDefault()
-        @closer()
+    @el.on 'click', '.close', (e) =>
+      e.preventDefault()
+      @closer()
 
   opener: =>
     $('.modal:not(.hidden)').toggleClass 'hidden'
