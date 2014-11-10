@@ -9,22 +9,31 @@
 		<title></title>
 
 		<link rel="shortcut icon" type="image/png" href="jasmine/jasmine_favicon.png">
-		<link rel="stylesheet" type="text/css" href="jasmine/jasmine.css">
+		<link rel="stylesheet" type="text/css" href="mocha.css">
 
 		<link rel="stylesheet" type="text/css" href="../dist/ocModal.css">
-
-		<script src="jasmine/jasmine.js"></script>
-		<script src="jasmine/jasmine-html.js"></script>
-		<script src="jasmine/boot.js"></script>
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="../dist/ocModal.js"></script>
-
-		<script src="spec/SpecHelper.js"></script>
-		<script src="spec/ocModalSpec.js"></script>
 	</head>
 
 	<body>
+		<div id="mocha"></div>
 
+		<script src="expect.js"></script>
+
+		<script src="mocha.js"></script>
+		<script>mocha.setup('bdd');</script>
+
+		<script src="blanket.js" data-cover-adapter="blanket-mocha.js"></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="../dist/ocModal.js" data-cover></script>
+
+		<script src="spec/SpecHelper.js"></script>
+		<script src="spec/ocModalSpec.js"></script>
+
+		<script>
+			mocha.checkLeaks();
+			mocha.globals(['jQuery']);
+			mocha.run();
+		</script>
 	</body>
 </html>
