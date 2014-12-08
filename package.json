@@ -1,7 +1,7 @@
 {
 	"author": "Octopus Creative",
 	"name": "ocModal",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "JavaScript modals done right.",
 	"dependencies": {},
 	"devDependencies": {
