@@ -37,7 +37,7 @@ class Modal
 
     @bg.removeClass('hidden')
     @el.removeClass('hidden').css
-      marginTop: window.scrollY
+      marginTop: window.scrollY || window.pageYOffset
 
     # Hide any popovers that may be open
     $('.popover:not(hidden)').addClass 'hidden'
